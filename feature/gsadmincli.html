@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>gsadminCli | GS Admin</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script>var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?31a22e6450725ffb38bab237cdf3c35c";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();</script>
+    <meta name="description" content="GS Admin是基于golang+element ui plus开发的高性能企业级后台管理系统">
+    
+    <link rel="preload" href="/assets/css/0.styles.d95f2786.css" as="style"><link rel="preload" href="/assets/js/app.6b52628b.js" as="script"><link rel="preload" href="/assets/js/2.a0c195e9.js" as="script"><link rel="preload" href="/assets/js/11.3bd07940.js" as="script"><link rel="prefetch" href="/assets/js/10.28dbb6da.js"><link rel="prefetch" href="/assets/js/12.ca1027e5.js"><link rel="prefetch" href="/assets/js/13.35cbd070.js"><link rel="prefetch" href="/assets/js/14.ce9b7238.js"><link rel="prefetch" href="/assets/js/15.1c588387.js"><link rel="prefetch" href="/assets/js/16.706a82f2.js"><link rel="prefetch" href="/assets/js/17.fe7339d0.js"><link rel="prefetch" href="/assets/js/18.e4348ce4.js"><link rel="prefetch" href="/assets/js/19.13b2dd82.js"><link rel="prefetch" href="/assets/js/3.1801cb39.js"><link rel="prefetch" href="/assets/js/4.605a857c.js"><link rel="prefetch" href="/assets/js/5.b7160b18.js"><link rel="prefetch" href="/assets/js/6.edb6cf3f.js"><link rel="prefetch" href="/assets/js/7.cdaade3c.js"><link rel="prefetch" href="/assets/js/8.2b062cab.js"><link rel="prefetch" href="/assets/js/9.bc23e85e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d95f2786.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/gslogo.png" alt="GS Admin" class="logo"> <span class="site-name can-hide">GS Admin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/#✈️-快速开始" class="nav-link">
+  快速开始
+</a></div><div class="nav-item"><a href="https://gsadmin.suiyidian.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  演示地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/#☕-开源捐赠" class="nav-link">
+  开源捐赠
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源仓库" class="dropdown-title"><span class="title">开源仓库</span> <span class="arrow down"></span></button> <button type="button" aria-label="开源仓库" class="mobile-dropdown-title"><span class="title">开源仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/kevn/gsadmin/tree/master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/sonhineboy/gsadmin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/#✈️-快速开始" class="nav-link">
+  快速开始
+</a></div><div class="nav-item"><a href="https://gsadmin.suiyidian.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  演示地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/#☕-开源捐赠" class="nav-link">
+  开源捐赠
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源仓库" class="dropdown-title"><span class="title">开源仓库</span> <span class="arrow down"></span></button> <button type="button" aria-label="开源仓库" class="mobile-dropdown-title"><span class="title">开源仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/kevn/gsadmin/tree/master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/sonhineboy/gsadmin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/" class="sidebar-link">介绍</a></li><li><a href="/guide/issue.html" class="sidebar-link">常见问题</a></li><li><a href="/quick/" class="sidebar-link">快速开始</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>基础介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/feature/mulu.html" class="sidebar-link">目录</a></li><li><a href="/feature/router.html" class="sidebar-link">路由</a></li><li><a href="/feature/event.html" class="sidebar-link">事件</a></li><li><a href="/feature/setting.html" class="sidebar-link">配置</a></li><li><a href="/feature/global.html" class="sidebar-link">全局变量</a></li><li><a href="/feature/permission.html" class="sidebar-link">权限</a></li></ul></section></li><li><a href="/gen/gen.html" class="sidebar-link">代码生成</a></li><li><a href="/feature/gsadmincli.html" aria-current="page" class="active sidebar-link">gsadminCli</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/feature/gsadmincli.html#gsadmincli" class="sidebar-link">gsadminCli</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/feature/gsadmincli.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/feature/gsadmincli.html#命令介绍" class="sidebar-link">命令介绍</a></li><li class="sidebar-sub-header"><a href="/feature/gsadmincli.html#参数" class="sidebar-link">参数</a></li><li class="sidebar-sub-header"><a href="/feature/gsadmincli.html#子命令参数" class="sidebar-link">子命令参数</a></li><li class="sidebar-sub-header"><a href="/feature/gsadmincli.html#部分演示" class="sidebar-link">部分演示</a></li></ul></li></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>部署</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="gsadmincli"><a href="#gsadmincli" class="header-anchor">#</a> gsadminCli</h2> <p>为什么会有这个工具，起因是在使用gsadmin项目开发中,有很多重复的工作，而我们真正关注应该是业务，不应该是这些重复的工作，所以就让这些工作交给gsadminCli 来处理吧。它主要能帮你创建 controller、validator、request、event、listener、model(目前仅支持Mysql)、repository。下面我们一起来看看具体怎么使用吧。</p> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>go <span class="token function">install</span> github.com/sonhineboy/gsadminCli
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="命令介绍"><a href="#命令介绍" class="header-anchor">#</a> 命令介绍</h3> <table><thead><tr><th>命令</th> <th>说明</th></tr></thead> <tbody><tr><td>make:controller</td> <td>创建控制器</td></tr> <tr><td>make:validator</td> <td>创建自定义验证器</td></tr> <tr><td>make:request</td> <td>创建请求结构体</td></tr> <tr><td>make:event</td> <td>创建事件</td></tr> <tr><td>make:listener</td> <td>创建事件监听者</td></tr> <tr><td>make:model</td> <td>创建表模型</td></tr> <tr><td>make:repository</td> <td>创建仓储业务</td></tr></tbody></table> <h3 id="参数"><a href="#参数" class="header-anchor">#</a> 参数</h3> <table><thead><tr><th>参数</th> <th>说明</th></tr></thead> <tbody><tr><td>-v</td> <td>查看版本</td></tr> <tr><td>-h</td> <td>查看帮助信息</td></tr></tbody></table> <h3 id="子命令参数"><a href="#子命令参数" class="header-anchor">#</a> 子命令参数</h3> <table><thead><tr><th>参数</th> <th>说明</th></tr></thead> <tbody><tr><td>--package</td> <td>如果是在根目录创建;必填</td></tr> <tr><td>-h</td> <td>查看帮助信息</td></tr> <tr><td>-t</td> <td>--table 表名 make:model 可用</td></tr> <tr><td>-d</td> <td>--dns 数据库连接dns make:model 可用</td></tr></tbody></table> <h3 id="部分演示"><a href="#部分演示" class="header-anchor">#</a> 部分演示</h3> <h4 id="创建-controller"><a href="#创建-controller" class="header-anchor">#</a> 创建 controller</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>gsadminCli make:controller ./app/controllers/demoController --package=controllers
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>代码如下</li></ul> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> controllers
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;github.com/gin-gonic/gin&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">type</span> DemoController <span class="token keyword">struct</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>controller <span class="token operator">*</span>DemoController<span class="token punctuation">)</span> <span class="token function">Index</span><span class="token punctuation">(</span>ctx <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>controller <span class="token operator">*</span>DemoController<span class="token punctuation">)</span> <span class="token function">Save</span><span class="token punctuation">(</span>ctx <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>controller <span class="token operator">*</span>DemoController<span class="token punctuation">)</span> <span class="token function">Edit</span><span class="token punctuation">(</span>ctx <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>controller <span class="token operator">*</span>DemoController<span class="token punctuation">)</span> <span class="token function">Delete</span><span class="token punctuation">(</span>ctx <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>controller <span class="token operator">*</span>DemoController<span class="token punctuation">)</span> <span class="token function">Get</span><span class="token punctuation">(</span>ctx <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h4 id="创建validator"><a href="#创建validator" class="header-anchor">#</a> 创建validator</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>gsadminCli make:validator ./app/validators/demoValidator
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>代码如下</li></ul> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> validators
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;github.com/go-playground/validator/v10&quot;</span>
+	<span class="token string">&quot;github.com/sonhineboy/gsadminValidator/ginValidator&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">type</span> DemoValidator <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	ginValidator<span class="token punctuation">.</span>BaseValidator
+<span class="token punctuation">}</span>
+
+<span class="token comment">//自定义验证名称 TagName</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>d <span class="token operator">*</span>DemoValidator<span class="token punctuation">)</span> <span class="token function">TagName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token string">&quot;Demo&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//错误提示信息 Messages</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>d <span class="token operator">*</span>DemoValidator<span class="token punctuation">)</span> <span class="token function">Messages</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token comment">//This is error message</span>
+	<span class="token keyword">return</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//验证规则 Validator  true 通过 false 未通过</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>d <span class="token operator">*</span>DemoValidator<span class="token punctuation">)</span> <span class="token function">Validator</span><span class="token punctuation">(</span>fl validator<span class="token punctuation">.</span>FieldLevel<span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span>
+	<span class="token comment">//To Do .....</span>
+	<span class="token keyword">return</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h4 id="创建表模型"><a href="#创建表模型" class="header-anchor">#</a> 创建表模型</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>gsadminCli make:model ./app/models/member.go -d='root:@tcp(127.0.0.1:3306)/demo' -t=members
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>代码如下</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>package models
+
+import (
+	&quot;fmt&quot;
+	&quot;github.com/sonhineboy/gsadmin/service/global&quot;
+)
+
+type Member struct {
+	global.GsModel
+	Name         string `gorm:&quot;column:name;json:name&quot;`
+	Email        string `gorm:&quot;column:email;json:email&quot;`
+	Age          int8   `gorm:&quot;column:age;json:age&quot;`
+	Birthday     string `gorm:&quot;column:birthday;json:birthday&quot;`
+	MemberNumber string `gorm:&quot;column:member_number;json:member_number&quot;`
+	ActivatedAt  string `gorm:&quot;column:activated_at;json:activated_at&quot;`
+}
+
+func (m *Member) TableName() string {
+	return fmt.Sprint(global.Config.Db.TablePrefix, &quot;members&quot;)
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://gitee.com/kevn/gsadmindoc/edit/master/docs/feature/gsadmincli.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/gen/gen.html" class="prev">
+        代码生成
+      </a></span> <span class="next"><a href="/deploy/deploy-compose-dev.html">
+        docker-compose(dev)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6b52628b.js" defer></script><script src="/assets/js/2.a0c195e9.js" defer></script><script src="/assets/js/11.3bd07940.js" defer></script>
+  </body>
+</html>

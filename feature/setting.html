@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置 | GS Admin</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script>var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?31a22e6450725ffb38bab237cdf3c35c";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();</script>
+    <meta name="description" content="GS Admin是基于golang+element ui plus开发的高性能企业级后台管理系统">
+    
+    <link rel="preload" href="/assets/css/0.styles.d95f2786.css" as="style"><link rel="preload" href="/assets/js/app.6b52628b.js" as="script"><link rel="preload" href="/assets/js/2.a0c195e9.js" as="script"><link rel="preload" href="/assets/js/15.1c588387.js" as="script"><link rel="prefetch" href="/assets/js/10.28dbb6da.js"><link rel="prefetch" href="/assets/js/11.3bd07940.js"><link rel="prefetch" href="/assets/js/12.ca1027e5.js"><link rel="prefetch" href="/assets/js/13.35cbd070.js"><link rel="prefetch" href="/assets/js/14.ce9b7238.js"><link rel="prefetch" href="/assets/js/16.706a82f2.js"><link rel="prefetch" href="/assets/js/17.fe7339d0.js"><link rel="prefetch" href="/assets/js/18.e4348ce4.js"><link rel="prefetch" href="/assets/js/19.13b2dd82.js"><link rel="prefetch" href="/assets/js/3.1801cb39.js"><link rel="prefetch" href="/assets/js/4.605a857c.js"><link rel="prefetch" href="/assets/js/5.b7160b18.js"><link rel="prefetch" href="/assets/js/6.edb6cf3f.js"><link rel="prefetch" href="/assets/js/7.cdaade3c.js"><link rel="prefetch" href="/assets/js/8.2b062cab.js"><link rel="prefetch" href="/assets/js/9.bc23e85e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d95f2786.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/gslogo.png" alt="GS Admin" class="logo"> <span class="site-name can-hide">GS Admin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/#✈️-快速开始" class="nav-link">
+  快速开始
+</a></div><div class="nav-item"><a href="https://gsadmin.suiyidian.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  演示地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/#☕-开源捐赠" class="nav-link">
+  开源捐赠
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源仓库" class="dropdown-title"><span class="title">开源仓库</span> <span class="arrow down"></span></button> <button type="button" aria-label="开源仓库" class="mobile-dropdown-title"><span class="title">开源仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/kevn/gsadmin/tree/master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/sonhineboy/gsadmin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/#✈️-快速开始" class="nav-link">
+  快速开始
+</a></div><div class="nav-item"><a href="https://gsadmin.suiyidian.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  演示地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/#☕-开源捐赠" class="nav-link">
+  开源捐赠
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源仓库" class="dropdown-title"><span class="title">开源仓库</span> <span class="arrow down"></span></button> <button type="button" aria-label="开源仓库" class="mobile-dropdown-title"><span class="title">开源仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/kevn/gsadmin/tree/master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/sonhineboy/gsadmin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/" class="sidebar-link">介绍</a></li><li><a href="/guide/issue.html" class="sidebar-link">常见问题</a></li><li><a href="/quick/" class="sidebar-link">快速开始</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/feature/mulu.html" class="sidebar-link">目录</a></li><li><a href="/feature/router.html" class="sidebar-link">路由</a></li><li><a href="/feature/event.html" class="sidebar-link">事件</a></li><li><a href="/feature/setting.html" aria-current="page" class="active sidebar-link">配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/feature/global.html" class="sidebar-link">全局变量</a></li><li><a href="/feature/permission.html" class="sidebar-link">权限</a></li></ul></section></li><li><a href="/gen/gen.html" class="sidebar-link">代码生成</a></li><li><a href="/feature/gsadmincli.html" class="sidebar-link">gsadminCli</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>部署</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h3> <p>项目配置文件为项目运行必须文件，不配置无法运行，快速配置可以复制&quot;config.example&quot;重命名 &quot;config.yaml&quot;。具体配置如下</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">env</span><span class="token punctuation">:</span> <span class="token string">&quot;dev&quot;</span> <span class="token comment"># 环境配置</span>
+<span class="token key atrule">db</span><span class="token punctuation">:</span> <span class="token comment">#数据库配置</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">'mysql'</span> 
+  <span class="token key atrule">host</span><span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span> 
+  <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token string">'3306'</span>
+  <span class="token key atrule">max-idle-conns</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token key atrule">max-open-conns</span><span class="token punctuation">:</span> <span class="token number">100</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">'root'</span>
+  <span class="token key atrule">password</span><span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token key atrule">database</span><span class="token punctuation">:</span> <span class="token string">'gin_scuiadmin'</span>
+  <span class="token key atrule">table_prefix</span><span class="token punctuation">:</span> <span class="token string">'gc_'</span>
+
+myjwt<span class="token punctuation">:</span><span class="token comment">#jwt认证配置密钥</span>
+  <span class="token key atrule">secret</span><span class="token punctuation">:</span> <span class="token string">'1212121213131'</span>
+app<span class="token punctuation">:</span><span class="token comment">#项目相关的配置</span>
+  <span class="token key atrule">host</span><span class="token punctuation">:</span> <span class="token string">&quot;http://localhost:8080&quot;</span>
+  <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token string">&quot;:8080&quot;</span>
+  <span class="token key atrule">uploadFile</span><span class="token punctuation">:</span> <span class="token string">&quot;/upload&quot;</span>
+<span class="token key atrule">rate</span><span class="token punctuation">:</span> <span class="token comment">#限流配置</span>
+  <span class="token key atrule">limit</span><span class="token punctuation">:</span> <span class="token number">15</span>
+  <span class="token key atrule">burst</span><span class="token punctuation">:</span> <span class="token number">2</span>
+<span class="token key atrule">logger</span><span class="token punctuation">:</span>
+  <span class="token key atrule">drive</span><span class="token punctuation">:</span> <span class="token string">&quot;zap&quot;</span> <span class="token comment"># 日志记录驱动</span>
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">&quot;logs&quot;</span> <span class="token comment"># 日志存放路径</span>
+  <span class="token key atrule">size</span><span class="token punctuation">:</span> <span class="token number">10</span> <span class="token comment"># 日志大小</span>
+  <span class="token key atrule">maxAge</span><span class="token punctuation">:</span> <span class="token number">3</span> <span class="token comment">#日志保留天数</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><blockquote><p><strong>注意</strong><br>
+如果要自己扩展额外的配置项，需要要在对应的common.go文件里增加结构体属性.</p></blockquote> <p>config/common.go文件如下</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">type</span> Config <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	Db <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+		Type         <span class="token builtin">string</span> <span class="token string">`yaml:&quot;type&quot;`</span>
+		MaxIdleConns <span class="token builtin">int</span>    <span class="token string">`yaml:&quot;max-idle-conns&quot;`</span>
+		MaxOpenConns <span class="token builtin">int</span>    <span class="token string">`yaml:&quot;max-open-conns&quot;`</span>
+		Port         <span class="token builtin">string</span> <span class="token string">`yaml:&quot;port&quot;`</span>
+		Host         <span class="token builtin">string</span> <span class="token string">`yaml:&quot;host&quot;`</span>
+		TablePrefix  <span class="token builtin">string</span> <span class="token string">`yaml:&quot;table_prefix&quot;`</span>
+		Database     <span class="token builtin">string</span> <span class="token string">`yaml:&quot;database&quot;`</span>
+		User         <span class="token builtin">string</span> <span class="token string">`yaml:&quot;name&quot;`</span>
+		PassWord     <span class="token builtin">string</span> <span class="token string">`yaml:&quot;password&quot;`</span>
+	<span class="token punctuation">}</span>
+	MyJwt <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+		Secret <span class="token builtin">string</span> <span class="token string">`yaml:&quot;secret&quot;`</span>
+	<span class="token punctuation">}</span>
+	App <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+		Host       <span class="token builtin">string</span> <span class="token string">`yaml:&quot;host&quot;`</span>
+		Port       <span class="token builtin">string</span> <span class="token string">`yaml:&quot;port&quot;`</span>
+		UploadFile <span class="token builtin">string</span> <span class="token string">`yaml:&quot;uploadFile&quot;`</span>
+	<span class="token punctuation">}</span>
+	Rate <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+		Limit rate<span class="token punctuation">.</span>Limit <span class="token string">`yaml:&quot;limit&quot;`</span>
+		Burst <span class="token builtin">int</span>        <span class="token string">`yaml:&quot;burst&quot;`</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://gitee.com/kevn/gsadmindoc/edit/master/docs/feature/setting.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">8/6/2024, 11:16:09 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/feature/event.html" class="prev">
+        事件
+      </a></span> <span class="next"><a href="/feature/global.html">
+        全局变量
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6b52628b.js" defer></script><script src="/assets/js/2.a0c195e9.js" defer></script><script src="/assets/js/15.1c588387.js" defer></script>
+  </body>
+</html>
